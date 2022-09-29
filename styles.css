@@ -1,0 +1,41 @@
+html {
+  font-family: sans-serif;
+}
+
+body {
+  height: 100vh;
+  margin: auto;
+  background-color: rgba(86, 86, 144);
+  color: white;
+}
+
+.container {
+  width: 800px;
+  margin: 0 auto;
+  padding: 20px 40px;
+}
+
+form {
+  background-color: rgb(38, 38, 68);
+  padding: 30px 20px;
+}
+
+.form-controller {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+form,
+label {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.radio,
+.checkbox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
