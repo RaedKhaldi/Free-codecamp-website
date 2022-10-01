@@ -1,41 +1,97 @@
-html {
-  font-family: sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
-body {
+html {
   height: 100vh;
-  margin: auto;
-  background-color: rgba(86, 86, 144);
-  color: white;
+}
+body {
+  height: 100%;
+  font-family: sans-serif;
+  background-color: aquamarine;
 }
 
 .container {
-  width: 800px;
-  margin: 0 auto;
-  padding: 20px 40px;
+  max-width: 700px;
+  margin: 50px auto;
+  background-color: blueviolet;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
 }
 
-form {
-  background-color: rgb(38, 38, 68);
-  padding: 30px 20px;
+.title {
+  font-size: 30px;
+  font-weight: bold;
+}
+.sub-title {
+  font-size: 15px;
 }
 
-.form-controller {
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 30px 80px;
+  width: 100%;
+}
+.personal-infos {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.personal-info-container {
   display: flex;
   flex-direction: column;
   gap: 5px;
 }
 
-form,
-label {
+.recommend,
+.favorite,
+.improved,
+.suggestions {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
-
-.radio,
-.checkbox {
+.improved-container {
   display: flex;
-  flex-direction: row;
   align-items: center;
+  gap: 5px;
+}
+
+.suggestions > textarea {
+  width: 100%;
+  height: 100px;
+  padding: 10px;
+}
+
+.btn-submit {
+  width: 100%;
+  padding: 7px 10px;
+  color: white;
+  background-color: rgb(19, 186, 19);
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+}
+
+input,
+select {
+  padding: 5px;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline-color: blue;
+}
+
+button:hover {
+  opacity: 0.9;
+  transition: all 0.3s ease;
 }
